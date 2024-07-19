@@ -45,40 +45,43 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="flex h-full w-full justify-center border-none bg-[url('/assets/Gradient.svg')] bg-cover">
-        {/* <Image
+      <div className="relative flex h-full w-full justify-center">
+        <Image
           src={Gradient}
           alt="Gradient"
-          className="mt-28 min-h-[500px] w-full object-cover lg:h-auto"
-        /> */}
-        <div className="flex flex-col items-center lg:-top-14">
+          className="mt-28 h-[400px] w-full object-cover md:h-auto"
+        />
+        <div className="absolute flex flex-col items-center lg:-top-14">
           <Image
             src={HeroImg}
             alt="hero image"
-            className="-ml-10 h-[310px] lg:-ml-24 lg:h-auto lg:w-[100%]"
+            className="-ml-10 h-[310px] sm:h-[400px] lg:-ml-24 lg:h-auto lg:w-[100%]"
           />
-          <div className="padding-container mx-auto flex flex-col items-center lg:flex-row lg:justify-between">
+
+          <div className="padding-container mx-auto flex flex-col items-center justify-center lg:hidden">
             <p className="mb-5 text-white lg:mb-0 lg:text-[18px]">
               Trusted by these companies
             </p>
-            <div className="flex flex-col items-center lg:hidden">
-              <div className="flex gap-8">
-                <Image src={GoogleImg} alt="google icon" />
-                <Image src={SlackImg} alt="slack icon" />
-              </div>
-              <div className="mb-8 flex gap-8">
-                <Image src={TrustPilotImg} alt="google icon" />
-                <Image src={CNNImg} alt="slack icon" />
-                <Image src={ClutchImg} alt="slack icon" />
-              </div>
-            </div>
-            <div className="hidden lg:flex">
+            <div className="flex gap-8">
               <Image src={GoogleImg} alt="google icon" />
               <Image src={SlackImg} alt="slack icon" />
+            </div>
+            <div className="mb-8 flex gap-8">
               <Image src={TrustPilotImg} alt="google icon" />
               <Image src={CNNImg} alt="slack icon" />
               <Image src={ClutchImg} alt="slack icon" />
             </div>
+          </div>
+
+          <div className="padding-container relative mx-auto hidden items-center lg:bottom-20 lg:flex lg:flex-row lg:justify-between">
+            <p className="mb-5 text-white lg:mb-0 lg:text-[18px]">
+              Trusted by these companies
+            </p>
+            <Image src={GoogleImg} alt="google icon" />
+            <Image src={SlackImg} alt="slack icon" />
+            <Image src={TrustPilotImg} alt="google icon" />
+            <Image src={CNNImg} alt="slack icon" />
+            <Image src={ClutchImg} alt="slack icon" />
           </div>
         </div>
       </div>
