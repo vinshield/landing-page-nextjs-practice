@@ -12,7 +12,7 @@ const navLinks = [
 
 export function Navbar() {
   return (
-    <nav className="padding-container flex w-full justify-between py-4 lg:container lg:mx-auto">
+    <nav className="padding-container container mx-auto flex justify-between py-4">
       <div className="flex items-center gap-[74px]">
         <Image src={Logo} alt="logo" />
         <ul className="hidden gap-14 lg:flex">

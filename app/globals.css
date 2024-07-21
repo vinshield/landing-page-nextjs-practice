@@ -35,7 +35,7 @@ h1 {
 
 @layer utilities {
   .padding-container {
-    @apply px-5 lg:mx-auto lg:px-20;
+    @apply px-5 md:mx-auto lg:px-16 xl:px-0;
   }
 
   .flexCenter {
@@ -48,5 +48,11 @@ h1 {
 
   .move-back {
     animation: move-back 0.5s forwards;
+  }
+
+  .fade-in-bg {
+    background:
+      linear-gradient(to bottom, white 0%, transparent 30%),
+      url("/assets/Gradient.svg") center center / cover no-repeat;
   }
 }
